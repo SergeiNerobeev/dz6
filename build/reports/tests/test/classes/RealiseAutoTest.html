@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1m0.33s</div>
+<div class="counter">33.999s</div>
 <p>duration</p>
 </div>
 </td>
@@ -82,7 +82,7 @@
 </thead>
 <tr>
 <td class="success">openWeb</td>
-<td class="success">1m0.33s</td>
+<td class="success">33.999s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -90,83 +90,81 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>[19:56:59.286] | DEBUG | Test worker                      | InternalLoggerFactory            | Using Log4J2 as the default logging framework
-[19:56:59.302] | DEBUG | Test worker                      | ResourceLeakDetector             | -Dio.netty.leakDetection.level: simple
-[19:56:59.302] | DEBUG | Test worker                      | ResourceLeakDetector             | -Dio.netty.leakDetection.targetRecords: 4
-[19:56:59.302] | DEBUG | Test worker                      | ResourceLeakDetectorFactory      | Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@341fb72b
-[19:56:59.317] | DEBUG | Test worker                      | PlatformDependent0               | -Dio.netty.noUnsafe: false
-[19:56:59.317] | DEBUG | Test worker                      | PlatformDependent0               | Java version: 8
-[19:56:59.317] | DEBUG | Test worker                      | PlatformDependent0               | sun.misc.Unsafe.theUnsafe: available
-[19:56:59.333] | DEBUG | Test worker                      | PlatformDependent0               | sun.misc.Unsafe.copyMemory: available
-[19:56:59.333] | DEBUG | Test worker                      | PlatformDependent0               | java.nio.Buffer.address: available
-[19:56:59.333] | DEBUG | Test worker                      | PlatformDependent0               | direct buffer constructor: available
-[19:56:59.333] | DEBUG | Test worker                      | PlatformDependent0               | java.nio.Bits.unaligned: available, true
-[19:56:59.333] | DEBUG | Test worker                      | PlatformDependent0               | jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
-[19:56:59.333] | DEBUG | Test worker                      | PlatformDependent0               | java.nio.DirectByteBuffer.&lt;init&gt;(long, int): available
-[19:56:59.333] | DEBUG | Test worker                      | PlatformDependent                | sun.misc.Unsafe: available
-[19:56:59.333] | DEBUG | Test worker                      | PlatformDependent                | -Dio.netty.tmpdir: C:\Users\User\AppData\Local\Temp (java.io.tmpdir)
-[19:56:59.333] | DEBUG | Test worker                      | PlatformDependent                | -Dio.netty.bitMode: 64 (sun.arch.data.model)
-[19:56:59.333] | DEBUG | Test worker                      | PlatformDependent                | Platform: Windows
-[19:56:59.333] | DEBUG | Test worker                      | PlatformDependent                | -Dio.netty.maxDirectMemory: 477626368 bytes
-[19:56:59.333] | DEBUG | Test worker                      | PlatformDependent                | -Dio.netty.uninitializedArrayAllocationThreshold: -1
-[19:56:59.333] | DEBUG | Test worker                      | CleanerJava6                     | java.nio.ByteBuffer.cleaner(): available
-[19:56:59.333] | DEBUG | Test worker                      | PlatformDependent                | -Dio.netty.noPreferDirect: false
-[19:56:59.349] | DEBUG | Test worker                      | PlatformDependent                | org.jctools-core.MpscChunkedArrayQueue: available
-[19:56:59.364] | DEBUG | Test worker                      | InternalThreadLocalMap           | -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-[19:56:59.364] | DEBUG | Test worker                      | InternalThreadLocalMap           | -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-[19:56:59.380] | DEBUG | Test worker                      | JdkSslContext                    | Default protocols (JDK): [TLSv1.2] 
-[19:56:59.380] | DEBUG | Test worker                      | JdkSslContext                    | Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
-[19:56:59.411] | DEBUG | Test worker                      | MultithreadEventLoopGroup        | -Dio.netty.eventLoopThreads: 16
-[19:56:59.427] | DEBUG | Test worker                      | NioEventLoop                     | -Dio.netty.noKeySetOptimization: false
-[19:56:59.427] | DEBUG | Test worker                      | NioEventLoop                     | -Dio.netty.selectorAutoRebuildThreshold: 512
-[19:56:59.427] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@169ad5b7
-[19:56:59.427] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@73e0b661
-[19:56:59.427] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3317f2c7
-[19:56:59.427] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4b794234
-[19:56:59.427] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2f70c68c
-[19:56:59.442] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@59d52ebd
-[19:56:59.442] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@55d87e8a
-[19:56:59.442] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5431fee7
-[19:56:59.442] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7ddc064b
-[19:56:59.442] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@d0c6f8b
-[19:56:59.442] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1bb66c8e
-[19:56:59.442] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@402b7fd9
-[19:56:59.442] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5d58d7c9
-[19:56:59.442] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@33469bde
-[19:56:59.442] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1bbc5324
-[19:56:59.442] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@f2323d
-[19:56:59.459] | DEBUG | Test worker                      | PooledByteBufAllocator           | -Dio.netty.allocator.numHeapArenas: 4
-[19:56:59.459] | DEBUG | Test worker                      | PooledByteBufAllocator           | -Dio.netty.allocator.numDirectArenas: 4
-[19:56:59.459] | DEBUG | Test worker                      | PooledByteBufAllocator           | -Dio.netty.allocator.pageSize: 8192
-[19:56:59.459] | DEBUG | Test worker                      | PooledByteBufAllocator           | -Dio.netty.allocator.maxOrder: 11
-[19:56:59.459] | DEBUG | Test worker                      | PooledByteBufAllocator           | -Dio.netty.allocator.chunkSize: 16777216
-[19:56:59.459] | DEBUG | Test worker                      | PooledByteBufAllocator           | -Dio.netty.allocator.smallCacheSize: 256
-[19:56:59.459] | DEBUG | Test worker                      | PooledByteBufAllocator           | -Dio.netty.allocator.normalCacheSize: 64
-[19:56:59.459] | DEBUG | Test worker                      | PooledByteBufAllocator           | -Dio.netty.allocator.maxCachedBufferCapacity: 32768
-[19:56:59.459] | DEBUG | Test worker                      | PooledByteBufAllocator           | -Dio.netty.allocator.cacheTrimInterval: 8192
-[19:56:59.459] | DEBUG | Test worker                      | PooledByteBufAllocator           | -Dio.netty.allocator.cacheTrimIntervalMillis: 0
-[19:56:59.475] | DEBUG | Test worker                      | PooledByteBufAllocator           | -Dio.netty.allocator.useCacheForAllThreads: true
-[19:56:59.475] | DEBUG | Test worker                      | PooledByteBufAllocator           | -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
-[19:56:59.475] | DEBUG | Test worker                      | ByteBufUtil                      | -Dio.netty.allocator.type: pooled
-[19:56:59.475] | DEBUG | Test worker                      | ByteBufUtil                      | -Dio.netty.threadLocalDirectBufferSize: 0
-[19:56:59.475] | DEBUG | Test worker                      | ByteBufUtil                      | -Dio.netty.maxThreadLocalCharBufferSize: 16384
-[19:57:00.274] | DEBUG | rding newSession on session null to remote | DefaultChannelId                 | -Dio.netty.processId: 8668 (auto-detected)
-[19:57:00.274] | DEBUG | rding newSession on session null to remote | NetUtil                          | -Djava.net.preferIPv4Stack: false
-[19:57:00.274] | DEBUG | rding newSession on session null to remote | NetUtil                          | -Djava.net.preferIPv6Addresses: false
-[19:57:00.492] | DEBUG | rding newSession on session null to remote | NetUtilInitializations           | Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
-[19:57:00.508] | DEBUG | rding newSession on session null to remote | NetUtil                          | Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
-[19:57:00.738] | DEBUG | rding newSession on session null to remote | DefaultChannelId                 | -Dio.netty.machineId: d8:cb:8a:ff:fe:f4:93:a1 (auto-detected)
-[19:57:00.791] | DEBUG | AsyncHttpClient-1-2              | AbstractByteBuf                  | -Dio.netty.buffer.checkAccessible: true
-[19:57:00.791] | DEBUG | AsyncHttpClient-1-2              | AbstractByteBuf                  | -Dio.netty.buffer.checkBounds: true
-[19:57:00.791] | DEBUG | AsyncHttpClient-1-2              | ResourceLeakDetectorFactory      | Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@382aa3b3
-[19:57:00.806] | DEBUG | AsyncHttpClient-1-2              | Recycler                         | -Dio.netty.recycler.maxCapacityPerThread: 4096
-[19:57:00.806] | DEBUG | AsyncHttpClient-1-2              | Recycler                         | -Dio.netty.recycler.ratio: 8
-[19:57:00.806] | DEBUG | AsyncHttpClient-1-2              | Recycler                         | -Dio.netty.recycler.chunkSize: 32
-[19:57:00.806] | DEBUG | AsyncHttpClient-1-2              | Recycler                         | -Dio.netty.recycler.blocking: false
-[19:57:01.508] | DEBUG | AsyncHttpClient-1-2              | Brotli                           | brotli4j not in the classpath; Brotli support will be unavailable.
-[19:57:01.648] | DEBUG | Test worker                      | ThreadLocalRandom                | -Dio.netty.initialSeedUniquifier: 0x0713a8a4b81ae949
-[19:57:01.837] | INFO  | Test worker                      | RealiseAutoTest                  | Logs on
-[19:57:56.810] | TRACE | AsyncHttpClient-1-4              | WebSocket08FrameEncoder          | Encoding WebSocket Frame opCode=8 length=26
+<pre>[16:45:00.278] | DEBUG | Test worker                      | InternalLoggerFactory            | Using Log4J2 as the default logging framework
+[16:45:00.287] | DEBUG | Test worker                      | ResourceLeakDetector             | -Dio.netty.leakDetection.level: simple
+[16:45:00.288] | DEBUG | Test worker                      | ResourceLeakDetector             | -Dio.netty.leakDetection.targetRecords: 4
+[16:45:00.293] | DEBUG | Test worker                      | ResourceLeakDetectorFactory      | Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@9c5959a
+[16:45:00.313] | DEBUG | Test worker                      | PlatformDependent0               | -Dio.netty.noUnsafe: false
+[16:45:00.313] | DEBUG | Test worker                      | PlatformDependent0               | Java version: 8
+[16:45:00.314] | DEBUG | Test worker                      | PlatformDependent0               | sun.misc.Unsafe.theUnsafe: available
+[16:45:00.316] | DEBUG | Test worker                      | PlatformDependent0               | sun.misc.Unsafe.copyMemory: available
+[16:45:00.317] | DEBUG | Test worker                      | PlatformDependent0               | java.nio.Buffer.address: available
+[16:45:00.317] | DEBUG | Test worker                      | PlatformDependent0               | direct buffer constructor: available
+[16:45:00.318] | DEBUG | Test worker                      | PlatformDependent0               | java.nio.Bits.unaligned: available, true
+[16:45:00.319] | DEBUG | Test worker                      | PlatformDependent0               | jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+[16:45:00.319] | DEBUG | Test worker                      | PlatformDependent0               | java.nio.DirectByteBuffer.&lt;init&gt;(long, int): available
+[16:45:00.319] | DEBUG | Test worker                      | PlatformDependent                | sun.misc.Unsafe: available
+[16:45:00.320] | DEBUG | Test worker                      | PlatformDependent                | -Dio.netty.tmpdir: C:\Users\User\AppData\Local\Temp (java.io.tmpdir)
+[16:45:00.320] | DEBUG | Test worker                      | PlatformDependent                | -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[16:45:00.321] | DEBUG | Test worker                      | PlatformDependent                | Platform: Windows
+[16:45:00.322] | DEBUG | Test worker                      | PlatformDependent                | -Dio.netty.maxDirectMemory: 477626368 bytes
+[16:45:00.322] | DEBUG | Test worker                      | PlatformDependent                | -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[16:45:00.324] | DEBUG | Test worker                      | CleanerJava6                     | java.nio.ByteBuffer.cleaner(): available
+[16:45:00.324] | DEBUG | Test worker                      | PlatformDependent                | -Dio.netty.noPreferDirect: false
+[16:45:00.334] | DEBUG | Test worker                      | PlatformDependent                | org.jctools-core.MpscChunkedArrayQueue: available
+[16:45:00.356] | DEBUG | Test worker                      | InternalThreadLocalMap           | -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[16:45:00.356] | DEBUG | Test worker                      | InternalThreadLocalMap           | -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[16:45:00.384] | DEBUG | Test worker                      | JdkSslContext                    | Default protocols (JDK): [TLSv1.2] 
+[16:45:00.384] | DEBUG | Test worker                      | JdkSslContext                    | Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+[16:45:00.411] | DEBUG | Test worker                      | MultithreadEventLoopGroup        | -Dio.netty.eventLoopThreads: 16
+[16:45:00.419] | DEBUG | Test worker                      | NioEventLoop                     | -Dio.netty.noKeySetOptimization: false
+[16:45:00.420] | DEBUG | Test worker                      | NioEventLoop                     | -Dio.netty.selectorAutoRebuildThreshold: 512
+[16:45:00.424] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1392e2b5
+[16:45:00.425] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@30494568
+[16:45:00.426] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@34ca9e9e
+[16:45:00.427] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@20a53c21
+[16:45:00.428] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@722f1af0
+[16:45:00.429] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@8b773d8
+[16:45:00.430] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6869323e
+[16:45:00.431] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@61244f26
+[16:45:00.432] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6bd62168
+[16:45:00.432] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@58ccb679
+[16:45:00.433] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7915879c
+[16:45:00.434] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3a0baae7
+[16:45:00.435] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@600c11af
+[16:45:00.436] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5d4e0ca9
+[16:45:00.437] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@8b259fb
+[16:45:00.438] | TRACE | Test worker                      | NioEventLoop                     | instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6f899698
+[16:45:00.462] | DEBUG | Test worker                      | PooledByteBufAllocator           | -Dio.netty.allocator.numHeapArenas: 4
+[16:45:00.462] | DEBUG | Test worker                      | PooledByteBufAllocator           | -Dio.netty.allocator.numDirectArenas: 4
+[16:45:00.462] | DEBUG | Test worker                      | PooledByteBufAllocator           | -Dio.netty.allocator.pageSize: 8192
+[16:45:00.463] | DEBUG | Test worker                      | PooledByteBufAllocator           | -Dio.netty.allocator.maxOrder: 11
+[16:45:00.463] | DEBUG | Test worker                      | PooledByteBufAllocator           | -Dio.netty.allocator.chunkSize: 16777216
+[16:45:00.463] | DEBUG | Test worker                      | PooledByteBufAllocator           | -Dio.netty.allocator.smallCacheSize: 256
+[16:45:00.463] | DEBUG | Test worker                      | PooledByteBufAllocator           | -Dio.netty.allocator.normalCacheSize: 64
+[16:45:00.464] | DEBUG | Test worker                      | PooledByteBufAllocator           | -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[16:45:00.464] | DEBUG | Test worker                      | PooledByteBufAllocator           | -Dio.netty.allocator.cacheTrimInterval: 8192
+[16:45:00.464] | DEBUG | Test worker                      | PooledByteBufAllocator           | -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[16:45:00.464] | DEBUG | Test worker                      | PooledByteBufAllocator           | -Dio.netty.allocator.useCacheForAllThreads: true
+[16:45:00.465] | DEBUG | Test worker                      | PooledByteBufAllocator           | -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[16:45:00.475] | DEBUG | Test worker                      | ByteBufUtil                      | -Dio.netty.allocator.type: pooled
+[16:45:00.476] | DEBUG | Test worker                      | ByteBufUtil                      | -Dio.netty.threadLocalDirectBufferSize: 0
+[16:45:00.476] | DEBUG | Test worker                      | ByteBufUtil                      | -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[16:45:01.241] | DEBUG | rding newSession on session null to remote | DefaultChannelId                 | -Dio.netty.processId: 6208 (auto-detected)
+[16:45:01.244] | DEBUG | rding newSession on session null to remote | NetUtil                          | -Djava.net.preferIPv4Stack: false
+[16:45:01.244] | DEBUG | rding newSession on session null to remote | NetUtil                          | -Djava.net.preferIPv6Addresses: false
+[16:45:01.471] | DEBUG | rding newSession on session null to remote | NetUtilInitializations           | Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[16:45:01.473] | DEBUG | rding newSession on session null to remote | NetUtil                          | Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[16:45:01.709] | DEBUG | rding newSession on session null to remote | DefaultChannelId                 | -Dio.netty.machineId: d8:cb:8a:ff:fe:f4:93:a1 (auto-detected)
+[16:45:01.757] | DEBUG | AsyncHttpClient-1-2              | AbstractByteBuf                  | -Dio.netty.buffer.checkAccessible: true
+[16:45:01.758] | DEBUG | AsyncHttpClient-1-2              | AbstractByteBuf                  | -Dio.netty.buffer.checkBounds: true
+[16:45:01.758] | DEBUG | AsyncHttpClient-1-2              | ResourceLeakDetectorFactory      | Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@1435694d
+[16:45:01.781] | DEBUG | AsyncHttpClient-1-2              | Recycler                         | -Dio.netty.recycler.maxCapacityPerThread: 4096
+[16:45:01.781] | DEBUG | AsyncHttpClient-1-2              | Recycler                         | -Dio.netty.recycler.ratio: 8
+[16:45:01.781] | DEBUG | AsyncHttpClient-1-2              | Recycler                         | -Dio.netty.recycler.chunkSize: 32
+[16:45:01.781] | DEBUG | AsyncHttpClient-1-2              | Recycler                         | -Dio.netty.recycler.blocking: false
+[16:45:04.049] | DEBUG | AsyncHttpClient-1-2              | Brotli                           | brotli4j not in the classpath; Brotli support will be unavailable.
+[16:45:04.471] | INFO  | Test worker                      | RealiseAutoTest                  | Logs on
 </pre>
 </span>
 </div>
@@ -176,16 +174,175 @@
 <pre>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 100.0.4896.60 (6a5d10861ce8de5fce22564658033b43cb7de047-refs/branch-heads/4896@{#875}) on port 58425
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-апр 23, 2022 7:57:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+1652881500624	geckodriver	INFO	Listening on 127.0.0.1:58870
+1652881501813	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;--remote-debugging-port&quot; &quot;60245&quot; &quot;--remote-allow-hosts&quot; &quot;localhost&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofileLYhSJg&quot;
+1652881502227	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new NotFoundError(&quot;Could not open the file at C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofileLYhSJg\\search.json.mozlz4&quot;, (void 0)))
+DevTools listening on ws://localhost:60245/devtools/browser/818cfa37-daa1-4024-8cfd-05f823f44ac2
+1652881503957	Marionette	INFO	Listening on port 24768
+Read port: 24768
+1652881504030	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+мая 18, 2022 4:45:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-апр 23, 2022 7:57:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 100, so returning the closest version found: 97
-апр 23, 2022 7:57:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-INFO: Found CDP implementation for version 100 of 97
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 17: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://code.acstat.com/, line 439: SyntaxError: missing catch or finally after try
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: https://code.acstat.com/, line 439: SyntaxError: missing catch or finally after try
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: https://code.acstat.com/, line 439: SyntaxError: missing catch or finally after try
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: https://code.acstat.com/, line 439: SyntaxError: missing catch or finally after try
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1652881520122	Marionette	INFO	Stopped listening on port 24768
+JavaScript error: resource://gre/actors/ContentMetaChild.jsm, line 179: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_ScriptErrorWithStack) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1652881521230	geckodriver	INFO	Listening on 127.0.0.1:62583
+1652881521722	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;--remote-debugging-port&quot; &quot;65335&quot; &quot;--remote-allow-hosts&quot; &quot;localhost&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofilemoJqSU&quot;
+1652881522164	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new NotFoundError(&quot;Could not open the file at C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofilemoJqSU\\search.json.mozlz4&quot;, (void 0)))
+DevTools listening on ws://localhost:65335/devtools/browser/0689ef2b-b451-4a2f-8099-ee69002fad86
+1652881523854	Marionette	INFO	Listening on port 24908
+Read port: 24908
+1652881523889	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+мая 18, 2022 4:45:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 17: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://code.acstat.com/, line 439: SyntaxError: missing catch or finally after try
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: https://code.acstat.com/, line 439: SyntaxError: missing catch or finally after try
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1652881529693	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: https://code.acstat.com/, line 439: SyntaxError: missing catch or finally after try
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://otus.ru&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1652881531971	Marionette	INFO	Stopped listening on port 24908
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
 </pre>
 </span>
 </div>
@@ -197,7 +354,7 @@ INFO: Found CDP implementation for version 100 of 97
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1.1</a> at 23.04.2022 19:57:59</p>
+<a href="http://www.gradle.org">Gradle 7.1.1</a> at 18.05.2022 16:45:33</p>
 </div>
 </div>
 </body>

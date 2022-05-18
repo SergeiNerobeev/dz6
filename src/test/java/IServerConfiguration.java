@@ -25,4 +25,13 @@ public interface IServerConfiguration extends Config {
   @Key("dateofbirthday")
   String dateofbirthday();
 
+  @Key("phonenumber")
+  String phonenumber();
+
+  @Key("company")
+  String company();
+
+  @Key("position")
+  String position();
+
 }
