@@ -102,7 +102,6 @@ public class RealiseAutoTest {
     Assert.assertEquals("Country is wrong",countryExpected, countryActual.getAttribute("title") );
 
     driver.findElement(By.xpath("//*[contains(@class, 'lk-cv-block__line')][.//input[@name='city']]")).click();
-    //WebElement cityActual = driver.findElement(By.xpath("//*[contains(@class,'lk-cv-block__select-scroll lk-cv-block__select-scroll_city js-custom-select-options')]//button[contains(@title,'Москва')]"));
     WebElement cityActual = driver.findElement(By.xpath("//*[contains(@class,'lk-cv-block__select-options')]//*[contains(@class,'js-custom-select-options')]//button[contains(@title,'Москва')]"));
     cityActual.click();
     String cityExpected = City.MOSCOW.getCity();
@@ -111,7 +110,7 @@ public class RealiseAutoTest {
     driver.findElement(By.xpath("//*[contains(@class, 'lk-cv-block__line')][.//input[@name='english_level']]")).click();
     WebElement englishActual = driver.findElement(By.xpath("//button[contains(@title,'Начальный уровень (Beginner)')]"));
     englishActual.click();
-    String englishExpected = Englishlevel.BEGINNER.getEnglishLevel(); //WebElement checkEnglishLevel = driver.findElement(By.xpath("//*[contains(@class,'input input_full lk-cv-block__input lk-cv-block__input_fake lk-cv-block__input_select-fake js-custom-select-presentation')][text()='Начальный уровень (Beginner)']"));
+    String englishExpected = Englishlevel.BEGINNER.getEnglishLevel();
     Assert.assertEquals("English level is wrong", englishExpected, englishActual.getAttribute("title"));
 
     driver.findElement(By.xpath("//span[contains(text(),'Да')]")).click();
@@ -129,7 +128,6 @@ public class RealiseAutoTest {
     Assert.assertTrue(clearField.isDisplayed());
 
     driver.findElement(By.xpath("//button[contains(text(),'Отправить')]")).click();
-//    driver.findElement(By.xpath("//*[contains(@class,'ic-close js-close-modal')]")).click();
     driver.findElement(By.xpath("//*[contains(@class,'ic-close ')]")).click();
 
     //Прокрутка страницы вниз
@@ -149,8 +147,6 @@ public class RealiseAutoTest {
     driver.findElement(By.xpath("//button[contains(text(),'Добавить')]")).click();
 
     driver.findElement(By.xpath("//*[contains(@class,'js-custom-select-presentation')]//span[contains(text(),'Способ связи')]")).click();
-    //WebElement okActual = driver.findElement(By.xpath("//div[@class='lk-cv-block__select-options lk-cv-block__select-options_left js-custom-select-options-container']//button[@title='OK']"));
-    //WebElement okActual = driver.findElement(By.xpath("//*[contains(@data-num,'1')]//*[contains(@class,'lk-cv-block__select-options_left')]//*[contains(@class,'js-custom-select-options')]//button[contains(@title,'OK')][text()]"));
     WebElement okActual = driver.findElement(By.xpath("//*[contains(@data-num,'1')]//*[contains(@class,'js-custom-select-options')]//button[contains(@title,'OK')][text()]"));
     okActual.click();
     String okExcepted = Communication.OK.getCommunication();
