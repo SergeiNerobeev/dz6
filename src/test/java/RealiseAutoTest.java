@@ -102,7 +102,8 @@ public class RealiseAutoTest {
     Assert.assertEquals("Country is wrong",countryExpected, countryActual.getAttribute("title") );
 
     driver.findElement(By.xpath("//*[contains(@class, 'lk-cv-block__line')][.//input[@name='city']]")).click();
-    WebElement cityActual = driver.findElement(By.xpath("//*[contains(@class,'lk-cv-block__select-scroll lk-cv-block__select-scroll_city js-custom-select-options')]//button[contains(@title,'Москва')]"));
+    //WebElement cityActual = driver.findElement(By.xpath("//*[contains(@class,'lk-cv-block__select-scroll lk-cv-block__select-scroll_city js-custom-select-options')]//button[contains(@title,'Москва')]"));
+    WebElement cityActual = driver.findElement(By.xpath("//*[contains(@class,'lk-cv-block__select-options')]//*[contains(@class,'js-custom-select-options')]//button[contains(@title,'Москва')]"));
     cityActual.click();
     String cityExpected = City.MOSCOW.getCity();
     Assert.assertEquals("City is wrong",cityExpected, cityActual.getAttribute("title"));
@@ -128,7 +129,8 @@ public class RealiseAutoTest {
     Assert.assertTrue(clearField.isDisplayed());
 
     driver.findElement(By.xpath("//button[contains(text(),'Отправить')]")).click();
-    driver.findElement(By.xpath("//*[contains(@class,'ic-close js-close-modal')]")).click();
+//    driver.findElement(By.xpath("//*[contains(@class,'ic-close js-close-modal')]")).click();
+    driver.findElement(By.xpath("//*[contains(@class,'ic-close ')]")).click();
 
     //Прокрутка страницы вниз
     WebElement scrollElementT = driver.findElement(By.xpath("//p[contains(text(),'Почта *')]"));
@@ -147,7 +149,9 @@ public class RealiseAutoTest {
     driver.findElement(By.xpath("//button[contains(text(),'Добавить')]")).click();
 
     driver.findElement(By.xpath("//*[contains(@class,'js-custom-select-presentation')]//span[contains(text(),'Способ связи')]")).click();
-    WebElement okActual = driver.findElement(By.xpath("//div[@class='lk-cv-block__select-options lk-cv-block__select-options_left js-custom-select-options-container']//button[@title='OK']"));
+    //WebElement okActual = driver.findElement(By.xpath("//div[@class='lk-cv-block__select-options lk-cv-block__select-options_left js-custom-select-options-container']//button[@title='OK']"));
+    //WebElement okActual = driver.findElement(By.xpath("//*[contains(@data-num,'1')]//*[contains(@class,'lk-cv-block__select-options_left')]//*[contains(@class,'js-custom-select-options')]//button[contains(@title,'OK')][text()]"));
+    WebElement okActual = driver.findElement(By.xpath("//*[contains(@data-num,'1')]//*[contains(@class,'js-custom-select-options')]//button[contains(@title,'OK')][text()]"));
     okActual.click();
     String okExcepted = Communication.OK.getCommunication();
     Assert.assertEquals("Communication 2 is wrong", okExcepted, okActual.getAttribute("title"));
